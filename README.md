@@ -1,4 +1,4 @@
-# Nexus CRUD - Premium User Management System
+# CRUD - Premium User Management System
 
 A high-performance, aesthetically pleasing CRUD application built with the MERN stack. Features a centralized state management system, real-time search, and a modern "Nexus" design language.
 
