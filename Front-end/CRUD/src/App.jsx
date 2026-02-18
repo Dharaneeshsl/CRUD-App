@@ -102,7 +102,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="text-center">NEXUS CRUD</h1>
+      <h1 className="text-center">CRUD APP</h1>
 
       {notification && (
         <div className={`alert alert-${notification.type} fixed-top m-3 shadow-lg`} style={{ zIndex: 1050, maxWidth: '400px', marginLeft: 'auto' }}>

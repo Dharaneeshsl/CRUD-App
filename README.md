@@ -1,6 +1,6 @@
-# Nexus CRUD - Premium User Management System
+# CRUD - Premium User Management System
 
-A high-performance, aesthetically pleasing CRUD application built with the MERN stack. Features a centralized state management system, real-time search, and a modern "Nexus" design language.
+A high-performance, aesthetically pleasing CRUD application built with the MERN stack. Features a centralized state management system, real-time search, and a modern design language.
 
 ## ✨ Features
 - **Modern Interface**: Premium UI using Inter & Outfit fonts with glassmorphism effects.
@@ -28,7 +28,7 @@ A high-performance, aesthetically pleasing CRUD application built with the MERN 
 │       ├── App.jsx         # Main orchestration & Search logic
 │       ├── UserForm.jsx    # Managed form component
 │       ├── UserTable.jsx   # Data display component
-│       └── UserTable.css   # Premium Nexus styles
+│       └── UserTable.css   # Premium CRUD styles
 └── package.json            # Root monorepo manager
 ```
 
