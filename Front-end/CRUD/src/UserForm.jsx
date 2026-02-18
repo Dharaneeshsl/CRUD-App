@@ -29,15 +29,14 @@ function UserForm({ onSubmit, initialData, onCancel }) {
       await onSubmit(formData);
       setFormData({ name: "", email: "", address: "" });
     } catch (err) {
-      const message = err?.response?.data?.message || err?.message || "Request failed";
-      alert(message);
+      // Error is handled by parent App.jsx notification system
     } finally {
       setSubmitting(false);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-dark p-3 rounded form-wrapper">
+    <form onSubmit={handleSubmit} className="p-3 rounded form-wrapper">
       <div className="form-grid">
         <input
           type="text"

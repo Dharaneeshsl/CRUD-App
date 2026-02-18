@@ -11,7 +11,7 @@
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
-    "dot-env": "^0.0.1",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mangoose-migrate": "^0.1.7",
     "mongoose": "^8.0.0"

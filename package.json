@@ -1,5 +1,14 @@
 {
-  "dependencies": {
-    "nodemon": "^3.1.10"
+  "name": "nexus-crud-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../Front-end/CRUD && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd Front-end/CRUD && npm run dev",
+    "dev": "npx concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
