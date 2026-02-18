@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # CRUD - Premium User Management System
 
 A high-performance, aesthetically pleasing CRUD application built with the MERN stack. Features a centralized state management system, real-time search, and a modern design language.
+=======
+# CRUD - User Management System
+>>>>>>> b3b989e01d8983b2d550492ba4b6192523e01898
 
 ## ✨ Features
 - **Modern Interface**: Premium UI using Inter & Outfit fonts with glassmorphism effects.
