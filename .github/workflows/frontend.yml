@@ -1,0 +1,49 @@
+name: Frontend CI/CD
+
+on:
+  push:
+    paths:
+      - "Front-end/**"
+      - ".github/workflows/frontend.yml"
+    branches: [main]
+
+  pull_request:
+    paths:
+      - "Front-end/**"
+
+jobs:
+  build-frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        working-directory: Front-end/CRUD
+        run: npm install
+
+      - name: Run Tests
+        working-directory: Front-end/CRUD
+        run: npm test --if-present
+
+      - name: Build Frontend
+        working-directory: Front-end/CRUD
+        run: npm run build
+
+  deploy-frontend:
+    needs: build-frontend
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Example deploy (replace with your hosting)
+      - name: Deploy Frontend
+        run: echo "Deploy frontend here"
